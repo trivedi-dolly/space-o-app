@@ -39,7 +39,6 @@
         </div>
 
         <div class="flex flex-row items-center mb-4">
-            <!-- Search Form -->
             <form id="searchForm" class="flex">
                 <input type="text" name="search" placeholder="Search..." id="searchInput"
                     class="border border-gray-300 rounded-l px-4 py-2 focus:outline-none focus:border-blue-500">
@@ -47,7 +46,6 @@
                     class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600 focus:outline-none">Search</button>
             </form>
 
-            <!-- Date Picker -->
             <div class="ml-4">
                 <label for="publishedAtFilter" class="mr-2">Filter by Publish Date:</label>
                 <input type="text" id="publishedAtFilter" placeholder="Select Date Range"
@@ -56,7 +54,6 @@
         </div>
 
 
-        <!-- Table -->
         <div class="overflow-x-auto">
             <table id="newsTable" class="table-auto min-w-full">
                 <thead>
@@ -148,7 +145,6 @@
                         this.classList.remove('sorted-asc');
                         this.classList.add('sorted-desc');
                     } else {
-                        // Remove sorting classes from other column headers
                         document.querySelectorAll('th').forEach(otherHeader => {
                             if (otherHeader !== header) {
                                 otherHeader.classList.remove('sorted-asc', 'sorted-desc');
@@ -160,7 +156,7 @@
                     }
 
                     const tbody = document.querySelector('tbody');
-                    tbody.innerHTML = ""; // Clear the existing table body content
+                    tbody.innerHTML = ""; 
                     rows.forEach(row => {
                         tbody.appendChild(row);
                     });
