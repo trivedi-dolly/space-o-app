@@ -9,3 +9,5 @@ Follow Below Steps To Run Project
 4. Open chrome browser hit localhost:8000.
 
 5. Test all the functionalities.
+
+Note: NEWS_API_KEY = 9ea65de290694db1883bafb89e361675 , Which I used for this task.
